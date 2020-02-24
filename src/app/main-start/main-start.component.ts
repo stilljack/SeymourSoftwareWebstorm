@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ShareService} from '../share.service';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-main-start',
@@ -7,11 +8,16 @@ import {ShareService} from '../share.service';
   styleUrls: ['./main-start.component.css']
 })
 export class MainStartComponent implements OnInit {
-  constructor( shareService: ShareService) {
-  this.title = shareService.title;
+  constructor( shareService: ShareService, private titleService: Title) {
+  this.nameOfComponent = shareService.title;
+  this.setTitle(shareService.title);
   }
-  title = '';
+  nameOfComponent = '';
   ngOnInit(): void {
+  }
+
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
   }
 
 }
