@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { SharedHeaderComponent } from './shared-header/shared-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainStartComponent } from './main-start/main-start.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SharedHeaderComponent,
-    MainStartComponent
+    MainStartComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
