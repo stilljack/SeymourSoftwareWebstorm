@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { SharedHeaderComponent} from './shared-header/shared-header.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
