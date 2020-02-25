@@ -9,6 +9,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BlogMainComponent } from './blog-main/blog-main.component';
 import { CodezooMainComponent } from './codezoo-main/codezoo-main.component';
 import { CvMainComponent } from './cv-main/cv-main.component';
+import { NueralBackgroundComponent } from './nueral-background/nueral-background.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -18,11 +25,18 @@ import { CvMainComponent } from './cv-main/cv-main.component';
     NavbarComponent,
     BlogMainComponent,
     CodezooMainComponent,
-    CvMainComponent
+    CvMainComponent,
+    NueralBackgroundComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
