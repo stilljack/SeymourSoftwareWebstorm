@@ -2,3 +2,9 @@
   max-width: 65vmax;
   margin: 10vmin;
 }
+a{
+
+ filter:  invert(75%);
+  backdrop-filter:drop-shadow(16px 16px 20px whitesmoke) ;
+
+}
