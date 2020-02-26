@@ -1,4 +1,4 @@
-<div style="height: 80vh;">
+<div style="height: 100vh;" id="Holder">
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
@@ -8,12 +8,12 @@
       <span class="menu-spacer"></span>
       <div fxShow="true" fxHide.lt-md>
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-        <a href="#" mat-button>Menu Item 1</a>
-        <a href="#" mat-button>Menu Item 2</a>
-        <a href="#" mat-button>Menu Item 3</a>
-        <a href="#" mat-button>Menu Item 4</a>
-        <a href="#" mat-button>Menu Item 5</a>
-        <a href="#" mat-button>Menu Item 6</a>
+        <a href="#c" mat-button>Menu Item 1</a>
+        <a href="#d" mat-button>Menu Item 2</a>
+        <a href="#s" mat-button>Menu Item 3</a>
+        <a href="#e" mat-button>Menu Item 4</a>
+        <a href="#v" mat-button>Menu Item 5</a>
+        <a href="#s" mat-button>Menu Item 6</a>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -22,29 +22,50 @@
     <mat-sidenav #sidenav>
       <mat-nav-list>
         <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
-        <a href="#" mat-list-item>Menu Item 1</a>
-        <a href="#" mat-list-item>Menu Item 2</a>
-        <a href="#" mat-list-item>Menu Item 3</a>
-        <a href="#" mat-list-item>Menu Item 4</a>
-        <a href="#" mat-list-item>Menu Item 5</a>
-        <a href="#"mat-list-item>Menu Item 6</a>
+        <a href="#a" mat-list-item>Menu Item 1</a>
+        <a href="#b" mat-list-item>Menu Item 2</a>
+        <a href="#c" mat-list-item>Menu Item 3</a>
+        <a href="#d" mat-list-item>Menu Item 4</a>
+        <a href="#e" mat-list-item>Menu Item 5</a>
+        <a href="#e"mat-list-item>Menu Item 6</a>
       </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content fxFlexFill>
+
+  <mat-sidenav-content fxFlexFill>
   <app-nueral-background></app-nueral-background>
 
   <div class="global-container">
-
     <div class=".foreground" role="main">
 
+      <div class="left" ><app-me-picture-box></app-me-picture-box>
+      </div>
 
-
-      <!-- main area -->
-
+      <div class="right">
       <app-main-start></app-main-start>
-      <app-navbar></app-navbar>
+      </div>
+
+      <div class="left" >
+        a;lkfdas
+        sdfasdfalsdf
+        l;dsakf
+        asd;lfk<p>LEFT</p>
+        <p>LEFT</p><p>LEFT</p><p>LEFT</p><p>LEFT</p><p>LEFT</p>
+      </div>
+      <div class="right">
+        a;lkfdas
+        sdfasdfalsdfsdafsa
+        l;dsakf
+        asd;lfk<p><b>Right</b></p>
+        <p><b>Right</b></p><p><b>Right</b></p><p><b>Right</b></p>
+      </div>
+
+
+
     </div>
+
   </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
 </div>
+

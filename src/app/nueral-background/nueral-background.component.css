@@ -1,0 +1,35 @@
+#background-neural {
+  fill: cadetblue;
+  z-index: -5;
+  position: absolute;
+  max-height: 90vmax;
+  max-width: 90vmax;
+  border: 1px dashed #696;
+  opacity: 0.2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: no-repeat center;
+  overflow: hidden;
+}
+
+.bg-nueral{
+position: absolute;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: -5;
+    width: 90vmax;
+    height: 90vmax;
+    background-image: url("src/assets/neural.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.background{
+
+  z-index: -5;
+  position: absolute;
+  margin: 0 5px;
+
+}

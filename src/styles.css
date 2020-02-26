@@ -4,8 +4,10 @@
 
 html, body { height: 100%; }
 body {
-  margin: 4vmax;
+  margin: 2vmax;
+  background: dimgrey;
+  filter: sepia(0.2);
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  overflow: hidden;
+
 }
 

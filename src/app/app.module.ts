@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { SharedHeaderComponent } from './shared-header/shared-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainStartComponent } from './main-start/main-start.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { BlogMainComponent } from './blog-main/blog-main.component';
 import { CodezooMainComponent } from './codezoo-main/codezoo-main.component';
 import { CvMainComponent } from './cv-main/cv-main.component';
@@ -16,17 +15,19 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MePictureBoxComponent } from './me-picture-box/me-picture-box.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SharedHeaderComponent,
     MainStartComponent,
-    NavbarComponent,
     BlogMainComponent,
     CodezooMainComponent,
     CvMainComponent,
     NueralBackgroundComponent,
+    MePictureBoxComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,8 @@
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
+#holder{
+  backdrop-filter:drop-shadow(16px 16px 20px whitesmoke) ;
+}
 .global-container{
   max-width: 90vmax;
   float: top;
@@ -13,14 +16,36 @@
   left: 10px;
   border: 1px dashed #900;
 }
+a{
+  filter: drop-shadow(5px 5px 5px white) invert(85%);
+}
+a:visited{
+  background: black;
+  filter: drop-shadow(5px 5px 5px white) invert(25%);
+}
+a:hover{
+  background: black;
+  filter: invert(25%);
+}
+.left{
+  box-shadow: 6px 6px 6px #080808;
+  position: relative;
+  float:left;
+  backdrop-filter:drop-shadow(16px 16px 20px whitesmoke) ;
+  padding: 10px;
+}
 
+.right{
+  box-shadow: 6px 6px 6px #080808;
+  position: relative;
+  float:right;
+  backdrop-filter:drop-shadow(16px 16px 20px whitesmoke) ;
+  padding: 10px;
+}
 .menu-spacer {
   flex: 1 1 auto;
 }
-a{
-  filter: drop-shadow(16px 16px 20px darkblue) invert(85%);
 
-}
 b {
   font-family: sans-serif;
 }
