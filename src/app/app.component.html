@@ -18,7 +18,7 @@
     </mat-toolbar-row>
   </mat-toolbar>
 
-  <mat-sidenav-container fxFlexFill>
+  <mat-sidenav-container fxFlexFill class="sidenav_bar">
     <mat-sidenav #sidenav>
       <mat-nav-list>
         <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
@@ -45,11 +45,23 @@
       </div>
 
       <div class="left" >
-        a;lkfdas
-        sdfasdfalsdf
-        l;dsakf
-        asd;lfk<p>LEFT</p>
-        <p>LEFT</p><p>LEFT</p><p>LEFT</p><p>LEFT</p><p>LEFT</p>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              blog 1
+            </mat-panel-title>
+            <mat-panel-description >
+              asdfas
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <app-cv-main></app-cv-main>
+          l;dsakf
+          asd;lfk<p>LEFT</p>
+          <p>LEFT</p><p>LEFT</p><p>LEFT</p><p>LEFT</p><p>LEFT</p>
+
+        </mat-expansion-panel>
+
       </div>
       <div class="right">
         a;lkfdas

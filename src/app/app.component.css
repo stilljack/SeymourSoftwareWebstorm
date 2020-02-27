@@ -17,15 +17,36 @@
   border: 1px dashed #900;
 }
 a{
-  filter: drop-shadow(5px 5px 5px white) invert(85%);
+  color: cadetblue;
+  filter: drop-shadow(5px 5px 5px cadetblue)
 }
 a:visited{
-  background: black;
-  filter: drop-shadow(5px 5px 5px white) invert(25%);
+  color: deepskyblue;
+  filter: drop-shadow(8px 8px 5px chocolate) invert(35);
 }
 a:hover{
-  background: black;
-  filter: invert(25%);
+  color: deepskyblue;
+  filter: drop-shadow(8px 8px 5px chocolate) invert(35);
+
+}
+
+.sidenav_bar{
+
+
+}
+
+.sidenav_bar a{
+  color: #990000;
+
+}
+.sidenav_bar a:visited{
+  background: aliceblue;
+  color: cornflowerblue;
+
+}
+.sidenav_bar a:hover{
+  background: #000000;
+  color: cornflowerblue;
 }
 .left{
   box-shadow: 6px 6px 6px #080808;

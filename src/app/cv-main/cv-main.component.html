@@ -1,1 +1,21 @@
-<p>cv-main works!</p>
+
+<ng-template ngFor let-parent [ngForOf]="blogs" >
+  {{ parent.title }} //// {{ parent.date }}
+  <mat-divider></mat-divider>
+  <p *ngFor="let child of parent.content">
+      {{ child }}
+  </p>
+  <mat-divider></mat-divider>
+</ng-template>
+cv maun
+<ul>
+
+  <li *ngFor="let blog of blogs; index as i; first as isFirst">
+    <h2>{{blog.title}}</h2>
+  <a *ngFor="let line in blog.content">
+  {{line}}
+  </a>
+  <hr *ngIf="isFirst">
+  <p>{{blog.date}}</p>
+  </li>
+</ul>
