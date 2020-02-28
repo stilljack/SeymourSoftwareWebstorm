@@ -1,0 +1,82 @@
+
+
+
+[
+  {
+    "title": "fuck me it works",
+    "date": "02/12/2020",
+    "content": [
+      "string1",
+      "2string",
+      "Str3ing"
+    ],
+    "images": [
+      {
+        "url": "https://i.imgur.com/VjM862vg.jpg",
+        "alt": "some alt text1",
+        "width": 100,
+        "height": 100
+      }
+    ],
+    "citations": [
+      {
+        "url": "http://citation.url/citation1",
+        "name": "!citationname!",
+        "date": "03/12/2020"
+      }
+    ]
+  },
+  {
+    "title": "title works 2",
+    "date": "02/12/2020",
+    "content": [
+      "string1",
+      "2string",
+      "Str3ing"
+    ],
+    "images": [
+      {
+        "url": "https://i.imgur.com/6eNO8Ta.jpg",
+        "alt": "some alt text1",
+        "width": "400",
+        "height": "600"
+      },
+      {
+        "url": "https://i.imgur.com/Ka66vMQ.mp4",
+        "alt": "some alt text2",
+        "width": 100,
+        "height": 100
+      }
+    ],
+    "citations": [
+      {
+        "url": "http://citation.url/citation1",
+        "name": "!citationname!",
+        "date": "03/12/2020"
+      }
+    ]
+  },
+  {
+    "title": "~title of third blog~",
+    "date": "02/12/2020",
+    "content": [
+      "string1",
+      "2string",
+      "Str3ing"
+    ],
+    "images": [
+      "https://i.imgur.com/VjM862vg.jpg"
+    ],
+    "citations": [
+      {
+        "url": "http://citation.url/citation1",
+        "name": "!citationname!",
+        "date": "03/12/2020"
+      }
+    ]
+  }
+]
+
+
+
+
