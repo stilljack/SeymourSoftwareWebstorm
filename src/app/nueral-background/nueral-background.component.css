@@ -4,18 +4,16 @@
   position: absolute;
   max-height: 90vmax;
   max-width: 90vmax;
-  border: 1px dashed #696;
   opacity: 0.2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background: no-repeat center;
-  overflow: hidden;
 }
 
 .bg-nueral{
-position: absolute;
+position: fixed;
   opacity: 0.2;
   overflow: hidden;
   z-index: -5;

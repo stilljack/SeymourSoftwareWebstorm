@@ -1,0 +1,36 @@
+@import url(tge);
+.blog_panel_total{
+  box-shadow: 6px 6px 6px #080808;
+  backdrop-filter:drop-shadow(16px 16px 20px  #080808) ;
+  background-color: transparent;
+  margin: 8px;
+
+}
+
+.title-spacer{
+  flex: 1 1 auto;
+}
+.blog_panel_header{
+  display: flex;
+  width: 100%;
+  border: double #080808 2px;
+  background-color: transparent;
+}
+
+.blog_panel_date   {
+  display: flex;
+  position: relative;
+  float:right;
+  alignment: bottom;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.blog_panel_title{
+  text-align: left;
+  display: flex;
+  position: relative;
+  float:left;
+  flex-grow: 1;
+  padding: 10px;
+}

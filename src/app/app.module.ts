@@ -17,6 +17,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MePictureBoxComponent } from './me-picture-box/me-picture-box.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { MeQuickLinksComponent } from './me-quick-links/me-quick-links.component';
+import {MatTableModule} from "@angular/material/table";
 
 
 @NgModule({
@@ -28,19 +30,25 @@ import {MatExpansionModule} from '@angular/material/expansion';
     CodezooMainComponent,
     CvMainComponent,
     NueralBackgroundComponent,
-    MePictureBoxComponent
+    MePictureBoxComponent,
+    MeQuickLinksComponent
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        MatSidenavModule,
-        MatToolbarModule,
-        MatListModule,
-        MatIconModule,
-        MatButtonModule,
-        FlexLayoutModule,
-        MatExpansionModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
+    FlexLayoutModule,
+    MatExpansionModule,
+    MatTableModule
+  ],
+  exports: [
+    MatIconModule,
+    MatButtonModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

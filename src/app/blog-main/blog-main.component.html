@@ -1,1 +1,33 @@
-<p>blog-main works!</p>
+<ng-template ngFor let-parent [ngForOf]="blogs">
+
+  <mat-expansion-panel class="blog_panel_total">
+    <mat-expansion-panel-header  class="blog_panel_header">
+      <mat-panel-title class="blog_panel_title">
+        {{parent.title}}    <span class="title-spacer"></span>
+      </mat-panel-title>
+
+      <mat-panel-description class="blog_panel_date">
+        <span class="title-spacer"></span>
+        {{ parent.date}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    ////
+    <p *ngFor="let string of parent.content">
+      <!--  each element of blog comes back piece by piece so you can contextually format a bit easier-->
+      {{ string }}
+    </p>
+    <span *ngFor="let image of parent.images">
+    <!--  each element of blog comes back piece by piece so you can contextually format a bit easier-->
+    <img alt="{{image.alt}}" src="{{image.url}}" width="{{image.width}}" height="{{image.height}}">
+  </span>
+    <span *ngFor="let citation of parent.citations">
+    <!--  each element of blog comes back piece by piece so you can contextually format a bit easier-->
+    <a href="{{citation.url}}">{{citation.name}}</a>
+    <span *ngIf="citation.date">    {{citation.date}}
+  </span>
+           </span>
+
+
+  </mat-expansion-panel>
+</ng-template>
+

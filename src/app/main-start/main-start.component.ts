@@ -1,6 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ShareService} from '../share.service';
-import {Title} from "@angular/platform-browser";
+import {Title} from '@angular/platform-browser';
 @ViewChild('canvas', { static: true })
 @Component({
   selector: 'app-main-start',
